@@ -20,16 +20,19 @@ public class menu2 {
         Integer numeroSw;
         String sNumeroSw;
         
-        sNumeroSw = JOptionPane.showInputDialog("MENÚ\n1)Saluda.\n2)Sale");
+        sNumeroSw = JOptionPane.showInputDialog("MENÚ\n1)Saludo matutino.\n2)Saludo Diurno\n3)Sale");
         numeroSw = Integer.parseInt(sNumeroSw);
     
         switch (numeroSw) {
             case 1:
-                System.out.println("Buenas Tardes");
+                System.out.println("Buenos Dias");
                 break;
             case 2: 
+                System.out.println("Buenas Tardes");
+            case 3: 
                 System.out.println("Adios");
                 break;
+                
             default:
                 throw new AssertionError();
         } 
